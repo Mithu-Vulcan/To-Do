@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="JS/script.js"></script>
+    <title>TO-DO</title>
+</head>
+<body>
+    <h1 class="heading">To-Do App</h1>
+    <div class="tasks" id="tasks">
+    </div>
+    <div class="tasks"> <!--same classes as above but it is for adding (form)-->
+        <div class="input-div">
+            <form onsubmit="handleAdd(event)">
+                <input type="text"  class="input-field" id="input-task" required>
+                <button type="submit" class="add-btn" onclick="handleAdd(event)">Add</button>
+            </form>   
+        </div>    
+    </div>
+    <div class="btn-div">
+        <button class="clear-btn" onclick="handleClear()">Clear</button>
+    </div>
+</body>
+</html>
