@@ -6,6 +6,13 @@
     --focolor:  #ff58339c;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
 body {
     background-color: var(--bgcolor);
     font-family: "Montserrat";
@@ -115,4 +122,14 @@ form {
 .clear-btn:focus,
 .done-btn:focus {
     background-color: var(--focolor);
+}
+
+.footer {
+  background-color: var(--secbgcolor);
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: #333;
+  border-top: 2px solid var(--btncolor);
+  margin-top: auto;
 }
